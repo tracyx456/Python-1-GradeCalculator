@@ -78,11 +78,11 @@ def play_round(player1_hand, player2_hand):
     if iResult == 1:
         player1_hand.append(player2_hand.pop(0))
         player1_hand.append(player1_hand.pop(0))
-        print("** Player 1 has a strong card. Player 1 won 1 card")
+        print("** Player 1 has a stronger card. Player 1 won 1 card")
     elif iResult == 2:
         player2_hand.append(player1_hand.pop(0))
         player2_hand.append(player2_hand.pop(0))
-        print("** Player 2 has a strong card. Player 2 won 1 card")
+        print("** Player 2 has a stronger card. Player 2 won 1 card")
     else:
         player1_table = []
         player2_table = []
