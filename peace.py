@@ -24,23 +24,6 @@ def shuffle_deck(lDeck):
     while len(lShuffledDeck) > 0:
         lDeck.append(lShuffledDeck.pop(0))
     
-    # To test war() then war(), force two cards are same at the beginning
-    """
-    lLastCards = []
-    lLastCards.append(lDeck[-1])
-    lLastCards.append(lDeck[-2])
-    for lCard in lDeck:
-        if lCard[0] == lLastCards[0][0]:
-            lDeck.insert(0, lDeck.pop(lDeck.index(lCard)))
-            break
-    for lCard in lDeck:
-        if lCard[0] == lLastCards[1][0]:
-            lDeck.insert(4, lDeck.pop(lDeck.index(lCard)))
-            break
-    lDeck.insert(26,     lDeck.pop(lDeck.index(lLastCards[0])))
-    lDeck.insert(26 + 4, lDeck.pop(lDeck.index(lLastCards[1])))
-    """
-
 # Split the deck into two hands
 def split_deck(lDeck, lP1Deck, lP2Deck):
     for iIndex in range(len(lDeck)):
